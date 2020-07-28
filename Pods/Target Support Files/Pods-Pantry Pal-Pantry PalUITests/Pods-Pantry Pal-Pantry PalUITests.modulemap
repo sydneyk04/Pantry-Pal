@@ -1,0 +1,6 @@
+framework module Pods_Pantry_Pal_Pantry_PalUITests {
+  umbrella header "Pods-Pantry Pal-Pantry PalUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

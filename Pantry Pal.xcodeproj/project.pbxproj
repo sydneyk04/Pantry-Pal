@@ -1,0 +1,973 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1992611E245F3BC3002BB7F0 /* LocationSearchTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1992611D245F3BC3002BB7F0 /* LocationSearchTable.swift */; };
+		19926123245F6DB1002BB7F0 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19926122245F6DB1002BB7F0 /* MapViewController.swift */; };
+		199261252460A21F002BB7F0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199261242460A21E002BB7F0 /* User.swift */; };
+		199261272461BF15002BB7F0 /* FavoritesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199261262461BF15002BB7F0 /* FavoritesTableViewController.swift */; };
+		199261292461C1EB002BB7F0 /* FavoriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199261282461C1EB002BB7F0 /* FavoriteCell.swift */; };
+		19DE4898244E3AE500988809 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DE4897244E3AE500988809 /* AppDelegate.swift */; };
+		19DE489A244E3AE500988809 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DE4899244E3AE500988809 /* SceneDelegate.swift */; };
+		19DE489F244E3AE500988809 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19DE489D244E3AE500988809 /* Main.storyboard */; };
+		19DE48A2244E3AE500988809 /* Pantry_Pal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 19DE48A0244E3AE500988809 /* Pantry_Pal.xcdatamodeld */; };
+		19DE48A4244E3AEB00988809 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19DE48A3244E3AEB00988809 /* Assets.xcassets */; };
+		19DE48A7244E3AEB00988809 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19DE48A5244E3AEB00988809 /* LaunchScreen.storyboard */; };
+		19DE48B2244E3AEB00988809 /* Pantry_PalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DE48B1244E3AEB00988809 /* Pantry_PalTests.swift */; };
+		19DE48BD244E3AEB00988809 /* Pantry_PalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DE48BC244E3AEB00988809 /* Pantry_PalUITests.swift */; };
+		19DE48CF244E3E3500988809 /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DE48CE244E3E3500988809 /* SearchModel.swift */; };
+		19DE48D0244E3E3500988809 /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DE48CE244E3E3500988809 /* SearchModel.swift */; };
+		19DE48D1244E3E3500988809 /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DE48CE244E3E3500988809 /* SearchModel.swift */; };
+		19DE48D3244E3FE200988809 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DE48D2244E3FE200988809 /* Recipe.swift */; };
+		19DE48D4244E3FE200988809 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DE48D2244E3FE200988809 /* Recipe.swift */; };
+		19DE48D5244E3FE200988809 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DE48D2244E3FE200988809 /* Recipe.swift */; };
+		19DE48D72452240600988809 /* RecipeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DE48D62452240600988809 /* RecipeListViewController.swift */; };
+		19DE48D82452240600988809 /* RecipeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DE48D62452240600988809 /* RecipeListViewController.swift */; };
+		19DE48D92452240600988809 /* RecipeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DE48D62452240600988809 /* RecipeListViewController.swift */; };
+		19DE48DB24522A6E00988809 /* RecipeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DE48DA24522A6E00988809 /* RecipeViewCell.swift */; };
+		19DE48DC24522A6E00988809 /* RecipeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DE48DA24522A6E00988809 /* RecipeViewCell.swift */; };
+		19DE48DD24522A6E00988809 /* RecipeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DE48DA24522A6E00988809 /* RecipeViewCell.swift */; };
+		19DE48E024522DAB00988809 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 19DE48DF24522DAB00988809 /* Kingfisher */; };
+		19DE48E224524F2D00988809 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DE48E124524F2D00988809 /* SearchViewController.swift */; };
+		19DE48E324524F2D00988809 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DE48E124524F2D00988809 /* SearchViewController.swift */; };
+		19DE48E424524F2D00988809 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DE48E124524F2D00988809 /* SearchViewController.swift */; };
+		19DE48E62458C24C00988809 /* RecipeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DE48E52458C24B00988809 /* RecipeModel.swift */; };
+		19DE48E72458C24C00988809 /* RecipeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DE48E52458C24B00988809 /* RecipeModel.swift */; };
+		19DE48E82458C24C00988809 /* RecipeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DE48E52458C24B00988809 /* RecipeModel.swift */; };
+		19DE48EA2458C3D400988809 /* InfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DE48E92458C3D400988809 /* InfoModel.swift */; };
+		19DE48EB2458C3D400988809 /* InfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DE48E92458C3D400988809 /* InfoModel.swift */; };
+		19DE48EC2458C3D400988809 /* InfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DE48E92458C3D400988809 /* InfoModel.swift */; };
+		19DE48EE2458C74500988809 /* RecipeInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DE48ED2458C74500988809 /* RecipeInfoViewController.swift */; };
+		19DE48EF2458C74500988809 /* RecipeInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DE48ED2458C74500988809 /* RecipeInfoViewController.swift */; };
+		19DE48F02458C74500988809 /* RecipeInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DE48ED2458C74500988809 /* RecipeInfoViewController.swift */; };
+		19DE48F22458F45800988809 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 19DE48F12458F45700988809 /* GoogleService-Info.plist */; };
+		19DE48F32458F45800988809 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 19DE48F12458F45700988809 /* GoogleService-Info.plist */; };
+		19DE48F42458F45800988809 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 19DE48F12458F45700988809 /* GoogleService-Info.plist */; };
+		19DE48F6245A037F00988809 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DE48F5245A037F00988809 /* LoginViewController.swift */; };
+		19DE48F8245A17EF00988809 /* LoginFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DE48F7245A17EF00988809 /* LoginFormViewController.swift */; };
+		19DE48FA245A180100988809 /* SignUpFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DE48F9245A180100988809 /* SignUpFormViewController.swift */; };
+		19DE48FC245A181100988809 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DE48FB245A181100988809 /* ProfileViewController.swift */; };
+		19DE48FF245A58C800988809 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DE48FE245A58C800988809 /* Constants.swift */; };
+		1C14EC2456F2E457911CA45E /* Pods_Pantry_PalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F1AFA3F5727A17268EA006 /* Pods_Pantry_PalTests.framework */; };
+		45B8355CABEDE46F2C1C33D2 /* Pods_Pantry_Pal_Pantry_PalUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7083BA86DF673C98879DF941 /* Pods_Pantry_Pal_Pantry_PalUITests.framework */; };
+		896504C3FA3AF68F9DE17B76 /* Pods_Pantry_Pal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 094D826A7B3449B7362CCAF6 /* Pods_Pantry_Pal.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		19DE48AE244E3AEB00988809 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19DE488C244E3AE500988809 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19DE4893244E3AE500988809;
+			remoteInfo = "Pantry Pal";
+		};
+		19DE48B9244E3AEB00988809 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19DE488C244E3AE500988809 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19DE4893244E3AE500988809;
+			remoteInfo = "Pantry Pal";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		094D826A7B3449B7362CCAF6 /* Pods_Pantry_Pal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pantry_Pal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1992611D245F3BC3002BB7F0 /* LocationSearchTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchTable.swift; sourceTree = "<group>"; };
+		19926122245F6DB1002BB7F0 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		199261242460A21E002BB7F0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		199261262461BF15002BB7F0 /* FavoritesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewController.swift; sourceTree = "<group>"; };
+		199261282461C1EB002BB7F0 /* FavoriteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCell.swift; sourceTree = "<group>"; };
+		19DE4894244E3AE500988809 /* Pantry Pal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pantry Pal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		19DE4897244E3AE500988809 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		19DE4899244E3AE500988809 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		19DE489E244E3AE500988809 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		19DE48A1244E3AE500988809 /* Pantry_Pal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pantry_Pal.xcdatamodel; sourceTree = "<group>"; };
+		19DE48A3244E3AEB00988809 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		19DE48A6244E3AEB00988809 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		19DE48A8244E3AEB00988809 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19DE48AD244E3AEB00988809 /* Pantry PalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pantry PalTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		19DE48B1244E3AEB00988809 /* Pantry_PalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pantry_PalTests.swift; sourceTree = "<group>"; };
+		19DE48B3244E3AEB00988809 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19DE48B8244E3AEB00988809 /* Pantry PalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pantry PalUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		19DE48BC244E3AEB00988809 /* Pantry_PalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pantry_PalUITests.swift; sourceTree = "<group>"; };
+		19DE48BE244E3AEB00988809 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19DE48CE244E3E3500988809 /* SearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModel.swift; sourceTree = "<group>"; };
+		19DE48D2244E3FE200988809 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		19DE48D62452240600988809 /* RecipeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListViewController.swift; sourceTree = "<group>"; };
+		19DE48DA24522A6E00988809 /* RecipeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewCell.swift; sourceTree = "<group>"; };
+		19DE48E124524F2D00988809 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		19DE48E52458C24B00988809 /* RecipeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeModel.swift; sourceTree = "<group>"; };
+		19DE48E92458C3D400988809 /* InfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoModel.swift; sourceTree = "<group>"; };
+		19DE48ED2458C74500988809 /* RecipeInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeInfoViewController.swift; sourceTree = "<group>"; };
+		19DE48F12458F45700988809 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		19DE48F5245A037F00988809 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		19DE48F7245A17EF00988809 /* LoginFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFormViewController.swift; sourceTree = "<group>"; };
+		19DE48F9245A180100988809 /* SignUpFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFormViewController.swift; sourceTree = "<group>"; };
+		19DE48FB245A181100988809 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		19DE48FE245A58C800988809 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		33A375917BF7FF7DA52B4F99 /* Pods-Pantry Pal-Pantry PalUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pantry Pal-Pantry PalUITests.debug.xcconfig"; path = "Target Support Files/Pods-Pantry Pal-Pantry PalUITests/Pods-Pantry Pal-Pantry PalUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		53D660134220D7F9AEA66C45 /* Pods-Pantry PalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pantry PalTests.debug.xcconfig"; path = "Target Support Files/Pods-Pantry PalTests/Pods-Pantry PalTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7083BA86DF673C98879DF941 /* Pods_Pantry_Pal_Pantry_PalUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pantry_Pal_Pantry_PalUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84F1AFA3F5727A17268EA006 /* Pods_Pantry_PalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pantry_PalTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5517127E0C2A8C3859A1FF6 /* Pods-Pantry Pal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pantry Pal.release.xcconfig"; path = "Target Support Files/Pods-Pantry Pal/Pods-Pantry Pal.release.xcconfig"; sourceTree = "<group>"; };
+		DA11A6B93DD9D86638B20DBF /* Pods-Pantry Pal-Pantry PalUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pantry Pal-Pantry PalUITests.release.xcconfig"; path = "Target Support Files/Pods-Pantry Pal-Pantry PalUITests/Pods-Pantry Pal-Pantry PalUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DCD621DEFBC25063115A006A /* Pods-Pantry Pal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pantry Pal.debug.xcconfig"; path = "Target Support Files/Pods-Pantry Pal/Pods-Pantry Pal.debug.xcconfig"; sourceTree = "<group>"; };
+		EDA3358E66874DBAF55AC8D9 /* Pods-Pantry PalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pantry PalTests.release.xcconfig"; path = "Target Support Files/Pods-Pantry PalTests/Pods-Pantry PalTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		19DE4891244E3AE500988809 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19DE48E024522DAB00988809 /* Kingfisher in Frameworks */,
+				896504C3FA3AF68F9DE17B76 /* Pods_Pantry_Pal.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19DE48AA244E3AEB00988809 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C14EC2456F2E457911CA45E /* Pods_Pantry_PalTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19DE48B5244E3AEB00988809 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45B8355CABEDE46F2C1C33D2 /* Pods_Pantry_Pal_Pantry_PalUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19DE488B244E3AE500988809 = {
+			isa = PBXGroup;
+			children = (
+				19DE4896244E3AE500988809 /* Pantry Pal */,
+				19DE48B0244E3AEB00988809 /* Pantry PalTests */,
+				19DE48BB244E3AEB00988809 /* Pantry PalUITests */,
+				19DE4895244E3AE500988809 /* Products */,
+				441BE431388B154B492D2961 /* Pods */,
+				640E1C0594110FC1A13182B9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		19DE4895244E3AE500988809 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				19DE4894244E3AE500988809 /* Pantry Pal.app */,
+				19DE48AD244E3AEB00988809 /* Pantry PalTests.xctest */,
+				19DE48B8244E3AEB00988809 /* Pantry PalUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		19DE4896244E3AE500988809 /* Pantry Pal */ = {
+			isa = PBXGroup;
+			children = (
+				19DE48FD245A589800988809 /* Helper */,
+				19DE48CD244E3E1D00988809 /* Model */,
+				19DE48CB244E3C0900988809 /* Controller */,
+				19DE48CA244E3BF100988809 /* View */,
+				19DE48CC244E3C2000988809 /* Supporting Files */,
+				19DE48A8244E3AEB00988809 /* Info.plist */,
+				19DE48F12458F45700988809 /* GoogleService-Info.plist */,
+				19DE48A0244E3AE500988809 /* Pantry_Pal.xcdatamodeld */,
+			);
+			path = "Pantry Pal";
+			sourceTree = "<group>";
+		};
+		19DE48B0244E3AEB00988809 /* Pantry PalTests */ = {
+			isa = PBXGroup;
+			children = (
+				19DE48B1244E3AEB00988809 /* Pantry_PalTests.swift */,
+				19DE48B3244E3AEB00988809 /* Info.plist */,
+			);
+			path = "Pantry PalTests";
+			sourceTree = "<group>";
+		};
+		19DE48BB244E3AEB00988809 /* Pantry PalUITests */ = {
+			isa = PBXGroup;
+			children = (
+				19DE48BC244E3AEB00988809 /* Pantry_PalUITests.swift */,
+				19DE48BE244E3AEB00988809 /* Info.plist */,
+			);
+			path = "Pantry PalUITests";
+			sourceTree = "<group>";
+		};
+		19DE48CA244E3BF100988809 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				19DE489D244E3AE500988809 /* Main.storyboard */,
+				19DE48A5244E3AEB00988809 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		19DE48CB244E3C0900988809 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				19DE48D62452240600988809 /* RecipeListViewController.swift */,
+				19DE48DA24522A6E00988809 /* RecipeViewCell.swift */,
+				19DE48E124524F2D00988809 /* SearchViewController.swift */,
+				19DE48ED2458C74500988809 /* RecipeInfoViewController.swift */,
+				19DE48F5245A037F00988809 /* LoginViewController.swift */,
+				19DE48F7245A17EF00988809 /* LoginFormViewController.swift */,
+				19DE48F9245A180100988809 /* SignUpFormViewController.swift */,
+				19DE48FB245A181100988809 /* ProfileViewController.swift */,
+				199261262461BF15002BB7F0 /* FavoritesTableViewController.swift */,
+				199261282461C1EB002BB7F0 /* FavoriteCell.swift */,
+				19926122245F6DB1002BB7F0 /* MapViewController.swift */,
+				1992611D245F3BC3002BB7F0 /* LocationSearchTable.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		19DE48CC244E3C2000988809 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				19DE48A3244E3AEB00988809 /* Assets.xcassets */,
+				19DE4899244E3AE500988809 /* SceneDelegate.swift */,
+				19DE4897244E3AE500988809 /* AppDelegate.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		19DE48CD244E3E1D00988809 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				19DE48D2244E3FE200988809 /* Recipe.swift */,
+				19DE48CE244E3E3500988809 /* SearchModel.swift */,
+				19DE48E52458C24B00988809 /* RecipeModel.swift */,
+				19DE48E92458C3D400988809 /* InfoModel.swift */,
+				199261242460A21E002BB7F0 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		19DE48FD245A589800988809 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				19DE48FE245A58C800988809 /* Constants.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		441BE431388B154B492D2961 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DCD621DEFBC25063115A006A /* Pods-Pantry Pal.debug.xcconfig */,
+				B5517127E0C2A8C3859A1FF6 /* Pods-Pantry Pal.release.xcconfig */,
+				33A375917BF7FF7DA52B4F99 /* Pods-Pantry Pal-Pantry PalUITests.debug.xcconfig */,
+				DA11A6B93DD9D86638B20DBF /* Pods-Pantry Pal-Pantry PalUITests.release.xcconfig */,
+				53D660134220D7F9AEA66C45 /* Pods-Pantry PalTests.debug.xcconfig */,
+				EDA3358E66874DBAF55AC8D9 /* Pods-Pantry PalTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		640E1C0594110FC1A13182B9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				094D826A7B3449B7362CCAF6 /* Pods_Pantry_Pal.framework */,
+				7083BA86DF673C98879DF941 /* Pods_Pantry_Pal_Pantry_PalUITests.framework */,
+				84F1AFA3F5727A17268EA006 /* Pods_Pantry_PalTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		19DE4893244E3AE500988809 /* Pantry Pal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19DE48C1244E3AEB00988809 /* Build configuration list for PBXNativeTarget "Pantry Pal" */;
+			buildPhases = (
+				6CF520D42B1B72133042B5F3 /* [CP] Check Pods Manifest.lock */,
+				19DE4890244E3AE500988809 /* Sources */,
+				19DE4891244E3AE500988809 /* Frameworks */,
+				19DE4892244E3AE500988809 /* Resources */,
+				E97BAFD49F3BB8EC9D8034E0 /* [CP] Embed Pods Frameworks */,
+				82A0F61DAF9163779D321F37 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pantry Pal";
+			packageProductDependencies = (
+				19DE48DF24522DAB00988809 /* Kingfisher */,
+			);
+			productName = "Pantry Pal";
+			productReference = 19DE4894244E3AE500988809 /* Pantry Pal.app */;
+			productType = "com.apple.product-type.application";
+		};
+		19DE48AC244E3AEB00988809 /* Pantry PalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19DE48C4244E3AEB00988809 /* Build configuration list for PBXNativeTarget "Pantry PalTests" */;
+			buildPhases = (
+				36B79BE23C27EA726A4F6D4E /* [CP] Check Pods Manifest.lock */,
+				19DE48A9244E3AEB00988809 /* Sources */,
+				19DE48AA244E3AEB00988809 /* Frameworks */,
+				19DE48AB244E3AEB00988809 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				19DE48AF244E3AEB00988809 /* PBXTargetDependency */,
+			);
+			name = "Pantry PalTests";
+			productName = "Pantry PalTests";
+			productReference = 19DE48AD244E3AEB00988809 /* Pantry PalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		19DE48B7244E3AEB00988809 /* Pantry PalUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19DE48C7244E3AEB00988809 /* Build configuration list for PBXNativeTarget "Pantry PalUITests" */;
+			buildPhases = (
+				79F97B40B0E2491079D4E7BD /* [CP] Check Pods Manifest.lock */,
+				19DE48B4244E3AEB00988809 /* Sources */,
+				19DE48B5244E3AEB00988809 /* Frameworks */,
+				19DE48B6244E3AEB00988809 /* Resources */,
+				A09FACDB1AA157EE65E0DD6C /* [CP] Embed Pods Frameworks */,
+				D2D7095ABC8251D0C2CDA57B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				19DE48BA244E3AEB00988809 /* PBXTargetDependency */,
+			);
+			name = "Pantry PalUITests";
+			productName = "Pantry PalUITests";
+			productReference = 19DE48B8244E3AEB00988809 /* Pantry PalUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		19DE488C244E3AE500988809 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Sydney Nguyen";
+				TargetAttributes = {
+					19DE4893244E3AE500988809 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					19DE48AC244E3AEB00988809 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 19DE4893244E3AE500988809;
+					};
+					19DE48B7244E3AEB00988809 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 19DE4893244E3AE500988809;
+					};
+				};
+			};
+			buildConfigurationList = 19DE488F244E3AE500988809 /* Build configuration list for PBXProject "Pantry Pal" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 19DE488B244E3AE500988809;
+			packageReferences = (
+				19DE48DE24522DAB00988809 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
+			productRefGroup = 19DE4895244E3AE500988809 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				19DE4893244E3AE500988809 /* Pantry Pal */,
+				19DE48AC244E3AEB00988809 /* Pantry PalTests */,
+				19DE48B7244E3AEB00988809 /* Pantry PalUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		19DE4892244E3AE500988809 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19DE48A7244E3AEB00988809 /* LaunchScreen.storyboard in Resources */,
+				19DE48F22458F45800988809 /* GoogleService-Info.plist in Resources */,
+				19DE48A4244E3AEB00988809 /* Assets.xcassets in Resources */,
+				19DE489F244E3AE500988809 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19DE48AB244E3AEB00988809 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19DE48F32458F45800988809 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19DE48B6244E3AEB00988809 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19DE48F42458F45800988809 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		36B79BE23C27EA726A4F6D4E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pantry PalTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6CF520D42B1B72133042B5F3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pantry Pal-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79F97B40B0E2491079D4E7BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pantry Pal-Pantry PalUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82A0F61DAF9163779D321F37 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pantry Pal/Pods-Pantry Pal-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pantry Pal/Pods-Pantry Pal-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Pantry Pal/Pods-Pantry Pal-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A09FACDB1AA157EE65E0DD6C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pantry Pal-Pantry PalUITests/Pods-Pantry Pal-Pantry PalUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pantry Pal-Pantry PalUITests/Pods-Pantry Pal-Pantry PalUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Pantry Pal-Pantry PalUITests/Pods-Pantry Pal-Pantry PalUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2D7095ABC8251D0C2CDA57B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pantry Pal-Pantry PalUITests/Pods-Pantry Pal-Pantry PalUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pantry Pal-Pantry PalUITests/Pods-Pantry Pal-Pantry PalUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Pantry Pal-Pantry PalUITests/Pods-Pantry Pal-Pantry PalUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E97BAFD49F3BB8EC9D8034E0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pantry Pal/Pods-Pantry Pal-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pantry Pal/Pods-Pantry Pal-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Pantry Pal/Pods-Pantry Pal-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		19DE4890244E3AE500988809 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19DE48FA245A180100988809 /* SignUpFormViewController.swift in Sources */,
+				19DE48F6245A037F00988809 /* LoginViewController.swift in Sources */,
+				19DE48A2244E3AE500988809 /* Pantry_Pal.xcdatamodeld in Sources */,
+				199261272461BF15002BB7F0 /* FavoritesTableViewController.swift in Sources */,
+				1992611E245F3BC3002BB7F0 /* LocationSearchTable.swift in Sources */,
+				19DE4898244E3AE500988809 /* AppDelegate.swift in Sources */,
+				19DE48E224524F2D00988809 /* SearchViewController.swift in Sources */,
+				19DE48D72452240600988809 /* RecipeListViewController.swift in Sources */,
+				19DE48EE2458C74500988809 /* RecipeInfoViewController.swift in Sources */,
+				199261292461C1EB002BB7F0 /* FavoriteCell.swift in Sources */,
+				19DE48FF245A58C800988809 /* Constants.swift in Sources */,
+				19DE48D3244E3FE200988809 /* Recipe.swift in Sources */,
+				19DE48EA2458C3D400988809 /* InfoModel.swift in Sources */,
+				19DE48E62458C24C00988809 /* RecipeModel.swift in Sources */,
+				19DE48CF244E3E3500988809 /* SearchModel.swift in Sources */,
+				19926123245F6DB1002BB7F0 /* MapViewController.swift in Sources */,
+				19DE48F8245A17EF00988809 /* LoginFormViewController.swift in Sources */,
+				19DE48FC245A181100988809 /* ProfileViewController.swift in Sources */,
+				19DE489A244E3AE500988809 /* SceneDelegate.swift in Sources */,
+				19DE48DB24522A6E00988809 /* RecipeViewCell.swift in Sources */,
+				199261252460A21F002BB7F0 /* User.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19DE48A9244E3AEB00988809 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19DE48E72458C24C00988809 /* RecipeModel.swift in Sources */,
+				19DE48E324524F2D00988809 /* SearchViewController.swift in Sources */,
+				19DE48EF2458C74500988809 /* RecipeInfoViewController.swift in Sources */,
+				19DE48DC24522A6E00988809 /* RecipeViewCell.swift in Sources */,
+				19DE48D82452240600988809 /* RecipeListViewController.swift in Sources */,
+				19DE48D4244E3FE200988809 /* Recipe.swift in Sources */,
+				19DE48B2244E3AEB00988809 /* Pantry_PalTests.swift in Sources */,
+				19DE48D0244E3E3500988809 /* SearchModel.swift in Sources */,
+				19DE48EB2458C3D400988809 /* InfoModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19DE48B4244E3AEB00988809 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19DE48E82458C24C00988809 /* RecipeModel.swift in Sources */,
+				19DE48E424524F2D00988809 /* SearchViewController.swift in Sources */,
+				19DE48F02458C74500988809 /* RecipeInfoViewController.swift in Sources */,
+				19DE48DD24522A6E00988809 /* RecipeViewCell.swift in Sources */,
+				19DE48D92452240600988809 /* RecipeListViewController.swift in Sources */,
+				19DE48D5244E3FE200988809 /* Recipe.swift in Sources */,
+				19DE48BD244E3AEB00988809 /* Pantry_PalUITests.swift in Sources */,
+				19DE48D1244E3E3500988809 /* SearchModel.swift in Sources */,
+				19DE48EC2458C3D400988809 /* InfoModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		19DE48AF244E3AEB00988809 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19DE4893244E3AE500988809 /* Pantry Pal */;
+			targetProxy = 19DE48AE244E3AEB00988809 /* PBXContainerItemProxy */;
+		};
+		19DE48BA244E3AEB00988809 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19DE4893244E3AE500988809 /* Pantry Pal */;
+			targetProxy = 19DE48B9244E3AEB00988809 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		19DE489D244E3AE500988809 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19DE489E244E3AE500988809 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		19DE48A5244E3AEB00988809 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19DE48A6244E3AEB00988809 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		19DE48BF244E3AEB00988809 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		19DE48C0244E3AEB00988809 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		19DE48C2244E3AEB00988809 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCD621DEFBC25063115A006A /* Pods-Pantry Pal.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ULSVMUGLV4;
+				INFOPLIST_FILE = "Pantry Pal/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.usc.sydneykn.Pantry-Pal";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		19DE48C3244E3AEB00988809 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5517127E0C2A8C3859A1FF6 /* Pods-Pantry Pal.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ULSVMUGLV4;
+				INFOPLIST_FILE = "Pantry Pal/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.usc.sydneykn.Pantry-Pal";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		19DE48C5244E3AEB00988809 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53D660134220D7F9AEA66C45 /* Pods-Pantry PalTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Pantry PalTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.usc.sydneykn.Pantry-PalTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pantry Pal.app/Pantry Pal";
+			};
+			name = Debug;
+		};
+		19DE48C6244E3AEB00988809 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDA3358E66874DBAF55AC8D9 /* Pods-Pantry PalTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Pantry PalTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.usc.sydneykn.Pantry-PalTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pantry Pal.app/Pantry Pal";
+			};
+			name = Release;
+		};
+		19DE48C8244E3AEB00988809 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33A375917BF7FF7DA52B4F99 /* Pods-Pantry Pal-Pantry PalUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Pantry PalUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.usc.sydneykn.Pantry-PalUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Pantry Pal";
+			};
+			name = Debug;
+		};
+		19DE48C9244E3AEB00988809 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA11A6B93DD9D86638B20DBF /* Pods-Pantry Pal-Pantry PalUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Pantry PalUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.usc.sydneykn.Pantry-PalUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Pantry Pal";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		19DE488F244E3AE500988809 /* Build configuration list for PBXProject "Pantry Pal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19DE48BF244E3AEB00988809 /* Debug */,
+				19DE48C0244E3AEB00988809 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19DE48C1244E3AEB00988809 /* Build configuration list for PBXNativeTarget "Pantry Pal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19DE48C2244E3AEB00988809 /* Debug */,
+				19DE48C3244E3AEB00988809 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19DE48C4244E3AEB00988809 /* Build configuration list for PBXNativeTarget "Pantry PalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19DE48C5244E3AEB00988809 /* Debug */,
+				19DE48C6244E3AEB00988809 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19DE48C7244E3AEB00988809 /* Build configuration list for PBXNativeTarget "Pantry PalUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19DE48C8244E3AEB00988809 /* Debug */,
+				19DE48C9244E3AEB00988809 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		19DE48DE24522DAB00988809 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.13.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		19DE48DF24522DAB00988809 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 19DE48DE24522DAB00988809 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		19DE48A0244E3AE500988809 /* Pantry_Pal.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				19DE48A1244E3AE500988809 /* Pantry_Pal.xcdatamodel */,
+			);
+			currentVersion = 19DE48A1244E3AE500988809 /* Pantry_Pal.xcdatamodel */;
+			path = Pantry_Pal.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 19DE488C244E3AE500988809 /* Project object */;
+}

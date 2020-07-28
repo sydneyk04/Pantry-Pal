@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>892855602016-e98tjpomn05d3pqi0cle84j2a9dtvj9e.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.892855602016-e98tjpomn05d3pqi0cle84j2a9dtvj9e</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCYFf8ypQCe7MwAzzfSNMtFwyShCnV2AvM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>892855602016</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>edu.usc.sydneykn.Pantry-Pal</string>
+	<key>PROJECT_ID</key>
+	<string>pantrypal-7a597</string>
+	<key>STORAGE_BUCKET</key>
+	<string>pantrypal-7a597.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:892855602016:ios:a4d0a40afc0565a183ec05</string>
+	<key>DATABASE_URL</key>
+	<string>https://pantrypal-7a597.firebaseio.com</string>
+</dict>
+</plist>
